@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p/views/exoplanets_view.dart';
 import 'package:p/views/home_view.dart';
 import 'package:p/views/onboarding.dart';
 
@@ -18,7 +19,12 @@ class NasaApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      routes: {
+        HomeView.id: (context) => HomeView(),
+        Onboarding.id: (context) => Onboarding(),
+        ExoplanetsView.id : (context) => ExoplanetsView(),
+      },
+      initialRoute: Onboarding.id,
     );
   }
 }

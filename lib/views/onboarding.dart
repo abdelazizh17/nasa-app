@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:p/views/home_view.dart';
 import 'package:p/widgets/custom_button.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
-
+  static String id = 'Onboarding';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        clipBehavior: Clip.none,
         children: [
-          const Padding(
+          Align(
+            alignment: Alignment.centerRight,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 200),
+              child: Image.asset('images/Vector.png'),
+            ),
+          ),
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,15 +46,12 @@ class Onboarding extends StatelessWidget {
                 SizedBox(
                   height: 12,
                 ),
-                CustomButton(text: 'Get Started'),
+                CustomButton(
+                    onTap: () {
+                      Navigator.pushNamed(context, HomeView.id);
+                    },
+                    text: 'Get Started'),
               ],
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 210),
-              child: Image.asset('images/Vector.png'),
             ),
           ),
           Positioned(
