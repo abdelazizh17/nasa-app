@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p/views/home_view.dart';
 import 'package:p/views/onboarding.dart';
 
 void main() {
@@ -12,9 +13,12 @@ class NasaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark),
+        fontFamily: 'Product Sans Regular',
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.black,
+      ),
       debugShowCheckedModeBanner: false,
-      home: const Onboarding(),
+      home: const HomeView(),
     );
   }
 }
