@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:p/views/planets_information_view.dart';
-
 
 class CustomButtonArrow extends StatelessWidget {
-  const CustomButtonArrow({super.key});
-
+  const CustomButtonArrow({super.key, this.onTap});
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.bottomCenter,
       child: GestureDetector(
-        onTap: () {
-          Navigator.pushNamed(context, PlanetsInformationView.id);
-        },
+        onTap: onTap,
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(

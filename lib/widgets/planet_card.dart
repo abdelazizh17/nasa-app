@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/model/planets_model.dart';
+import 'package:p/views/planets_information_view.dart';
 import 'package:p/widgets/custom_button_arrow.dart';
 
 class PlanetCard extends StatelessWidget {
@@ -67,7 +68,11 @@ class PlanetCard extends StatelessWidget {
             width: 180,
           ),
         ),
-        const CustomButtonArrow(),
+        CustomButtonArrow(
+          onTap: () {
+            Navigator.pushNamed(context, PlanetsInformationView.id);
+          },
+        ),
       ],
     );
   }
