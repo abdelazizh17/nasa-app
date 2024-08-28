@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/widgets/custom_bottom_sheet.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
 
 class PlanetsInformationView extends StatelessWidget {
   const PlanetsInformationView({super.key});
@@ -17,6 +18,7 @@ class PlanetsInformationView extends StatelessWidget {
             ),
           ),
           CustomBottomSheet(),
+
         ],
       ),
     );
