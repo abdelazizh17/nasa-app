@@ -19,10 +19,10 @@ class CustomBottomSheet extends StatelessWidget {
             ),
             color: Color(0xff161616),
           ),
-          child: SingleChildScrollView(
+          child: const SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Padding(
-              padding: const EdgeInsets.symmetric(
+              padding: EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 24,
               ),
@@ -30,7 +30,7 @@ class CustomBottomSheet extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ListTile(
-                    title: const Text(
+                    title: Text(
                       'Earth',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -39,14 +39,6 @@ class CustomBottomSheet extends StatelessWidget {
                           ),
                     ),
                     subtitle: PlanetInformation(),
-                    trailing: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.play_arrow,
-                        color: Colors.white,
-                        size: 24,
-                      ),
-                    ),
                   ),
                 ],
               ),
@@ -57,3 +49,13 @@ class CustomBottomSheet extends StatelessWidget {
     );
   }
 }
+
+
+// trailing: IconButton(
+//                       onPressed: () {},
+//                       icon: const Icon(
+//                         Icons.play_arrow,
+//                         color: Colors.white,
+//                         size: 24,
+//                       ),
+//                     ),
