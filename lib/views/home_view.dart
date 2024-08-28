@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/views/exoplanets_view.dart';
+import 'package:p/views/planets_information_view.dart';
 import 'package:p/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -20,9 +20,7 @@ class HomeView extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Exoplanets'),
-              onTap: () {
-               Navigator.pushNamed(context, ExoplanetsView.id);
-              },
+              onTap: () {},
             ),
           ],
         ),

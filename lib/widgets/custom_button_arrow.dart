@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/views/exoplanets_view.dart';
+import 'package:p/views/planets_information_view.dart';
 
 
 class CustomButtonArrow extends StatelessWidget {
@@ -11,7 +11,7 @@ class CustomButtonArrow extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, ExoplanetsView.id);
+          Navigator.pushNamed(context, PlanetsInformationView.id);
         },
         child: Card(
           color: Colors.white,

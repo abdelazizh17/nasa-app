@@ -17,6 +17,40 @@ class Onboarding extends StatelessWidget {
               child: Image.asset('images/Vector.png'),
             ),
           ),
+          Positioned(
+            top: 250,
+            child: Image.asset(
+              'images/Earth.png',
+            ),
+          ),
+          Positioned(
+            left: 150,
+            bottom: 0,
+            child: Image.asset(
+              'images/Mars.png',
+            ),
+          ),
+          Positioned(
+            right: 5,
+            top: 240,
+            child: Image.asset(
+              'images/Property 1=Frame 37560.png',
+            ),
+          ),
+          Positioned(
+            left: 5,
+            bottom: -5,
+            child: Image.asset(
+              'images/Property 1=Frame 37.png',
+            ),
+          ),
+          Positioned(
+            left: -5,
+            bottom: 260,
+            child: Image.asset(
+              'images/Property 1=Frame 37554.png',
+            ),
+          ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
             child: Column(
@@ -52,40 +86,6 @@ class Onboarding extends StatelessWidget {
                     },
                     text: 'Get Started'),
               ],
-            ),
-          ),
-          Positioned(
-            top: 250,
-            child: Image.asset(
-              'images/Earth.png',
-            ),
-          ),
-          Positioned(
-            left: 150,
-            bottom: 0,
-            child: Image.asset(
-              'images/Mars.png',
-            ),
-          ),
-          Positioned(
-            right: 5,
-            top: 240,
-            child: Image.asset(
-              'images/Property 1=Frame 37560.png',
-            ),
-          ),
-          Positioned(
-            left: 5,
-            bottom: -5,
-            child: Image.asset(
-              'images/Property 1=Frame 37.png',
-            ),
-          ),
-          Positioned(
-            left: -5,
-            bottom: 260,
-            child: Image.asset(
-              'images/Property 1=Frame 37554.png',
             ),
           ),
         ],
