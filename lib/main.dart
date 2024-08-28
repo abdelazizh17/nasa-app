@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:p/page/gas_giant_page.dart';
+import 'package:p/page/neptune_like_page.dart';
+import 'package:p/page/super_earth_page.dart';
+import 'package:p/page/terrestrial_page.dart';
+import 'package:p/page/unknown_page.dart';
+import 'package:p/views/exoplanets_view.dart';
 import 'package:p/views/planets_information_view.dart';
 import 'package:p/views/home_view.dart';
 import 'package:p/views/onboarding.dart';
@@ -22,7 +28,13 @@ class NasaApp extends StatelessWidget {
       routes: {
         HomeView.id: (context) => HomeView(),
         Onboarding.id: (context) => Onboarding(),
-        PlanetsInformationView.id : (context) => PlanetsInformationView(),
+        PlanetsInformationView.id: (context) => PlanetsInformationView(),
+        ExoplanetsView.id: (context) => ExoplanetsView(),
+        GasGiantPage.id: (context) => GasGiantPage(),
+        TerrestrialPage.id: (context) => TerrestrialPage(),
+        SuperEarthPage.id: (context) => SuperEarthPage(),
+        UnknownPage.id: (context) => UnknownPage(),
+        NeptuneLikePage.id: (context) => NeptuneLikePage(),
       },
       initialRoute: Onboarding.id,
     );

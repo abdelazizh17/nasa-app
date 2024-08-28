@@ -28,8 +28,8 @@ class CustomAppBar extends StatelessWidget {
           }),
           const Spacer(),
           Image.asset(
-            'images/ic_avatar.png',
-            width: 35,
+            'images/ic_avatar_4.png',
+            width: 45,
           ),
         ],
       ),
