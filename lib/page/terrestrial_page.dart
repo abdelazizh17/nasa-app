@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:p/widgets/custom_app_bar.dart';
+
 import 'package:p/widgets/custom_bottom_sheet.dart';
 import 'package:p/widgets/custom_button_arrow.dart';
 
@@ -13,14 +12,14 @@ class TerrestrialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Exoplanets'),
+        title: const Text('Exoplanets'),
       ),
       body: ListView.builder(
         shrinkWrap: true,
         itemCount: 10,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+          return const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 18),
             child: ExoplanetCard(),
           );
         },
@@ -39,18 +38,18 @@ class ExoplanetCard extends StatelessWidget {
     return Stack(clipBehavior: Clip.none, children: [
       Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
               alignment: Alignment.centerLeft,
               image: AssetImage(
                 'images/terrestrial.png',
               )),
-          color: Color(0xff161616),
+          color: const Color(0xff161616),
           borderRadius: BorderRadius.circular(12),
         ),
         width: double.infinity,
         height: 151,
-        child: Padding(
-          padding: const EdgeInsets.only(left: 170, right: 20),
+        child: const Padding(
+          padding: EdgeInsets.only(left: 170, right: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,7 +86,7 @@ class ExoplanetCard extends StatelessWidget {
                 ),
                 context: context,
                 builder: (context) {
-                  return CustomBottomSheet();
+                  return const CustomBottomSheet();
                 });
           },
         ),

@@ -6,32 +6,34 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
-      child: Row(
-        children: [
-          Builder(builder: (context) {
-            return ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  fixedSize: const Size(10, 10),
-                  backgroundColor: Colors.white.withOpacity(0),
-                  side: const BorderSide(color: Colors.white),
-                  shape: BeveledRectangleBorder(
-                      borderRadius: BorderRadius.circular(16))),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              child: Image.asset(
-                'images/ic_menu.png',
-                width: 20,
-              ),
-            );
-          }),
-          const Spacer(),
-          Image.asset(
-            'images/ic_avatar_4.png',
-            width: 45,
-          ),
-        ],
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: SafeArea(
+        child: Row(
+          children: [
+            Builder(builder: (context) {
+              return ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(10, 10),
+                    backgroundColor: Colors.white.withOpacity(0),
+                    side: const BorderSide(color: Colors.white),
+                    shape: BeveledRectangleBorder(
+                        borderRadius: BorderRadius.circular(16))),
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                child: Image.asset(
+                  'images/ic_menu.png',
+                  width: 20,
+                ),
+              );
+            }),
+            const Spacer(),
+            Image.asset(
+              'images/ic_avatar_4.png',
+              width: 45,
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -18,13 +18,14 @@ class Onboarding extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 250,
+            top: 290,
+            left: 30,
             child: Image.asset(
               'images/Earth.png',
             ),
           ),
           Positioned(
-            left: 150,
+            left: 175,
             bottom: 0,
             child: Image.asset(
               'images/Mars.png',
@@ -46,46 +47,48 @@ class Onboarding extends StatelessWidget {
           ),
           Positioned(
             left: -5,
-            bottom: 260,
+            top: 340,
             child: Image.asset(
               'images/Property 1=Frame 37554.png',
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  'Explore the\nUniverse',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Product Sans Regular',
+            padding: EdgeInsets.symmetric(horizontal: 24),
+            child: SafeArea(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Explore the\nUniverse',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Product Sans Regular',
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 12,
-                ),
-                Text(
-                  'Journey through the cosmos\nwith our space app',
-                  style: TextStyle(
-                    color: Color(0xffB4B4B4),
-                    fontSize: 18,
-                    fontFamily: 'Product Sans Regular',
+                  SizedBox(
+                    height: 12,
                   ),
-                ),
-                SizedBox(
-                  height: 12,
-                ),
-                CustomButton(
-                    onTap: () {
-                      Navigator.pushNamed(context, HomeView.id);
-                    },
-                    text: 'Get Started'),
-              ],
+                  Text(
+                    'Journey through the cosmos\nwith our space app',
+                    style: TextStyle(
+                      color: Color(0xffB4B4B4),
+                      fontSize: 18,
+                      fontFamily: 'Product Sans Regular',
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  CustomButton(
+                      onTap: () {
+                        Navigator.pushNamed(context, HomeView.id);
+                      },
+                      text: 'Get Started'),
+                ],
+              ),
             ),
           ),
         ],
