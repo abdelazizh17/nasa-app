@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:p/model/planets_model.dart';
-import 'package:p/views/planets_information_view.dart';
-import 'package:p/widgets/custom_button_arrow.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_model.dart';
+import 'package:p/Features/solar_system/presentation/views/planets_information_view.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/custom_button_arrow.dart';
 
 class PlanetCard extends StatelessWidget {
   const PlanetCard({

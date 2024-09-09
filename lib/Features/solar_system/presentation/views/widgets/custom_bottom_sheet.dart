@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/widgets/planet_information.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/planet_information.dart';
 
 class CustomBottomSheet extends StatelessWidget {
   const CustomBottomSheet({super.key});

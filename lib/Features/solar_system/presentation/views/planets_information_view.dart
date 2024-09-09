@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:p/widgets/custom_bottom_sheet.dart';
-import 'package:p/widgets/planet_3d_model.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/custom_bottom_sheet.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/planet_3d_model.dart';
 
 class PlanetsInformationView extends StatelessWidget {
   const PlanetsInformationView({super.key});

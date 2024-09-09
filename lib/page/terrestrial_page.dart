@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:p/widgets/custom_bottom_sheet.dart';
-import 'package:p/widgets/custom_button_arrow.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/custom_bottom_sheet.dart';
+import 'package:p/Features/solar_system/presentation/views/widgets/custom_button_arrow.dart';
 
 class TerrestrialPage extends StatelessWidget {
   const TerrestrialPage({super.key});

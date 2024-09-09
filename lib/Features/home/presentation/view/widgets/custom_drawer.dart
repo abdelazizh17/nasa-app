@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/page/super_earth_page.dart';
 import 'package:p/page/terrestrial_page.dart';
-import 'package:p/views/home_view.dart';
+import 'package:p/Features/home/presentation/view/home_view.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({

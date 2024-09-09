@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:p/widgets/custom_drawer.dart';
-import 'package:p/widgets/home_view_body.dart';
+import 'package:p/Features/home/presentation/view/widgets/custom_drawer.dart';
+import 'package:p/Features/home/presentation/view/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

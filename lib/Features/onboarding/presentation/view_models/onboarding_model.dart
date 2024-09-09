@@ -1,4 +1,3 @@
-import 'package:p/views/onboarding.dart';
 
 class OnboardingModel {
   final String title;

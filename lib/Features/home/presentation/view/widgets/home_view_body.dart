@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:p/model/planets_model.dart';
-import 'package:p/widgets/carousel_slider_view.dart';
-import 'package:p/widgets/custom_app_bar.dart';
+import 'package:p/Features/home/presentation/view/widgets/icons_avatar.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_model.dart';
+import 'package:p/Features/solar_system/presentation/views/carousel_slider_view.dart';
+import 'package:p/Features/home/presentation/view/widgets/custom_app_bar.dart';
 
 class HomeViewBody extends StatelessWidget {
   
@@ -36,7 +37,6 @@ class HomeViewBody extends StatelessWidget {
             const CustomAppBar(),
             Expanded(
               child: Column(
-                // mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text(
                     "Space\nExplorer",
@@ -48,32 +48,12 @@ class HomeViewBody extends StatelessWidget {
                   Expanded(
                     child: CarouselSliderView(planetsModel: planetsModel),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        "images/ic_avatar_1.png",
-                        width: 30,
-                      ),
-                      Image.asset(
-                        "images/ic_avatar_2.png",
-                        width: 30,
-                      ),
-                      Image.asset(
-                        "images/ic_avatar_3.png",
-                        width: 30,
-                      ),
-                      Image.asset(
-                        "images/ic_avatar_4.png",
-                        width: 30,
-                      ),
-                    ],
-                  ),
-                  Text(
+                 const IconsAvatar(),
+                  const Text(
                     "John, evelin and 8 friends are online",
                     style: TextStyle(fontSize: 10),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   )
                 ],
@@ -86,3 +66,4 @@ class HomeViewBody extends StatelessWidget {
     );
   }
 }
+

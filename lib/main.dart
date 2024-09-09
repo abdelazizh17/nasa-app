@@ -1,17 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:p/firebase_options.dart';
 import 'package:p/page/gas_giant_page.dart';
 import 'package:p/page/neptune_like_page.dart';
 import 'package:p/page/super_earth_page.dart';
 import 'package:p/page/terrestrial_page.dart';
 import 'package:p/page/unknown_page.dart';
 import 'package:p/views/exoplanets_view.dart';
-import 'package:p/views/onboarding2.dart';
-import 'package:p/views/planets_information_view.dart';
-import 'package:p/views/home_view.dart';
-import 'package:p/views/onboarding.dart';
+import 'package:p/Features/onboarding/presentation/views/onboarding.dart';
+import 'package:p/Features/solar_system/presentation/views/planets_information_view.dart';
+import 'package:p/Features/home/presentation/view/home_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
+  
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   final onboarding = prefs.getBool('onboarding') ?? false;
@@ -22,7 +24,7 @@ void main() async {
 
 class NasaApp extends StatelessWidget {
   final bool onboarding;
-  const NasaApp({super.key,  this.onboarding = false});
+  const NasaApp({super.key, this.onboarding = false});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,6 @@ class NasaApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         HomeView.id: (context) => HomeView(),
-        Onboarding.id: (context) => Onboarding(),
         PlanetsInformationView.id: (context) => PlanetsInformationView(),
         ExoplanetsView.id: (context) => ExoplanetsView(),
         GasGiantPage.id: (context) => GasGiantPage(),
@@ -43,9 +44,9 @@ class NasaApp extends StatelessWidget {
         SuperEarthPage.id: (context) => SuperEarthPage(),
         UnknownPage.id: (context) => UnknownPage(),
         NeptuneLikePage.id: (context) => NeptuneLikePage(),
-        Onboarding2.id: (context) => Onboarding2(),
+        Onboarding.id: (context) => Onboarding(),
       },
-      initialRoute: onboarding? HomeView.id :  Onboarding2.id,
+      initialRoute: onboarding ? HomeView.id : Onboarding.id,
     );
   }
 }
