@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
 import 'package:p/Features/solar_system/presentation/view_models/planets_model.dart';
 import 'package:p/Features/solar_system/presentation/views/planets_information_view.dart';
 import 'package:p/Features/solar_system/presentation/views/widgets/custom_button_arrow.dart';
+import 'package:p/cubit/planet_cubit.dart';
 
 class PlanetCard extends StatelessWidget {
   const PlanetCard({
     super.key,
     required this.planetsModel,
   });
+
   final PlanetsModel planetsModel;
   @override
   Widget build(BuildContext context) {

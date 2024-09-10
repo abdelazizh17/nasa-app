@@ -86,7 +86,7 @@ class ExoplanetCard extends StatelessWidget {
                 ),
                 context: context,
                 builder: (context) {
-                  return const CustomBottomSheet();
+                  return  Container();
                 });
           },
         ),

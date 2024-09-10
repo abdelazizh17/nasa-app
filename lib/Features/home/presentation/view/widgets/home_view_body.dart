@@ -5,21 +5,20 @@ import 'package:p/Features/solar_system/presentation/views/carousel_slider_view.
 import 'package:p/Features/home/presentation/view/widgets/custom_app_bar.dart';
 
 class HomeViewBody extends StatelessWidget {
-  
   HomeViewBody({super.key});
   final List<PlanetsModel> planetsModel = [
     PlanetsModel(
-        title: 'Earth',
-        description: 'Earth Description',
-        image: 'images/img_earth.png'),
+      title: 'Earth',
+      image: 'images/img_earth.png',
+      description:
+          'Earth is the only planet known to harbor life, thanks to its liquid water, atmosphere rich in oxygen, and suitable temperature range. It\'s a dynamic planet with constantly shifting tectonic plates, diverse ecosystems, and a unique climate system.',
+    ),
     PlanetsModel(
-        title: 'Mars',
-        description: 'Mars Description',
-        image: 'images/img_mars.png'),
-    PlanetsModel(
-        title: 'Venus',
-        description: 'Venus Description',
-        image: 'images/img_venus.png'),
+      title: 'Mars',
+      image: 'images/img_mars.png',
+      description:
+          'Earth is the only planet known to harbor life, thanks to its liquid water, atmosphere rich in oxygen, and suitable temperature range. It\'s a dynamic planet with constantly shifting tectonic plates, diverse ecosystems, and a unique climate system.',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -48,7 +47,7 @@ class HomeViewBody extends StatelessWidget {
                   Expanded(
                     child: CarouselSliderView(planetsModel: planetsModel),
                   ),
-                 const IconsAvatar(),
+                  const IconsAvatar(),
                   const Text(
                     "John, evelin and 8 friends are online",
                     style: TextStyle(fontSize: 10),
@@ -66,4 +65,3 @@ class HomeViewBody extends StatelessWidget {
     );
   }
 }
-

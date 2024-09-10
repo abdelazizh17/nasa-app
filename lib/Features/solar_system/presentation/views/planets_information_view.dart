@@ -18,7 +18,7 @@ class PlanetsInformationView extends StatelessWidget {
               child: Image.asset('images/stars.png'),
             ),
           ),
-          const Planet3dModel(),
+          // const Planet3dModel(),
           const CustomBottomSheet(),
         ],
       ),

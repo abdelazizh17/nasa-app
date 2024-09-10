@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:p/page/super_earth_page.dart';
 import 'package:p/page/terrestrial_page.dart';
 import 'package:p/Features/home/presentation/view/home_view.dart';
+import 'package:p/page/unknown_page.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
@@ -90,7 +91,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, TerrestrialPage.id);
+                  Navigator.pushNamed(context, UnknownPage.id);
                 },
               ),
               const SizedBox(
