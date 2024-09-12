@@ -55,6 +55,27 @@ class PlanetInformation extends StatelessWidget {
             title: '• Surface Features : ',
             subtitle: planetsInfoModel.surfaceFeatures,
           ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Exploration : ',
+            subtitle: planetsInfoModel.exploration,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Potential for Life : ',
+            subtitle: planetsInfoModel.potentialForLife,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Fun Facts : ',
+            subtitle: planetsInfoModel.funFacts,
+          ),
         ],
       ),
     );

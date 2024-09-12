@@ -1,0 +1,106 @@
+import 'package:flutter/material.dart';
+import 'package:p/Features/neptune_like/presentation/view_models/neptune_like_model.dart';
+
+class NeptuneLikeInformation extends StatelessWidget {
+  const NeptuneLikeInformation({super.key, required this.neptuneLikeModel});
+  final NeptuneLikeModel neptuneLikeModel;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(
+        top: 16,
+        bottom: 16,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CustomRichText(
+            title: '• Description : ',
+            subtitle: neptuneLikeModel.description,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Age: : ',
+            subtitle: neptuneLikeModel.age,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Distance from earth : ',
+            subtitle: neptuneLikeModel.distance,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Mass : ',
+            subtitle: neptuneLikeModel.mass,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Orbital Period : ',
+            subtitle: neptuneLikeModel.orbitalPeriod,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Formation Material : ',
+            subtitle: neptuneLikeModel.formationMaterial,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Discovery Method : ',
+            subtitle: neptuneLikeModel.discoveryMethod,
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          CustomRichText(
+            title: '• Fun Fact : ',
+            subtitle: neptuneLikeModel.funFact,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class CustomRichText extends StatelessWidget {
+  const CustomRichText({
+    super.key,
+    required this.title,
+    required this.subtitle,
+  });
+  final String title, subtitle;
+  @override
+  Widget build(BuildContext context) {
+    return RichText(
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: title,
+            style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Color(0xffBFBFBF),
+                fontSize: 16 // Color for "News"
+                ),
+          ),
+          TextSpan(
+            text: subtitle,
+            style: const TextStyle(
+                color: Color(0xffBFBFBF), fontSize: 13 // Color for "Cloud"
+                ),
+          ),
+        ],
+      ),
+    );
+  }
+}

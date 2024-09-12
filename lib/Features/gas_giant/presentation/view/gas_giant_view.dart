@@ -9,4 +9,3 @@ class GasGiantView extends StatelessWidget {
     return const GasGiantViewBody();
   }
 }
-
