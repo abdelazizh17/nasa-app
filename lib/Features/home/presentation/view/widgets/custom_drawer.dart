@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:p/page/super_earth_page.dart';
-import 'package:p/page/terrestrial_page.dart';
+import 'package:p/Features/gas_giant/presentation/view/gas_giant_view.dart';
+import 'package:p/Features/neptune_like/presentation/view/neptune_like_page.dart';
+import 'package:p/Features/super_earth/presentation/view/super_earth_page.dart';
+import 'package:p/Features/terrestrial/presentation/view/terrestrial_page.dart';
 import 'package:p/Features/home/presentation/view/home_view.dart';
-import 'package:p/page/unknown_page.dart';
+import 'package:p/Features/unknown/presentation/view/unknown_page.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
@@ -67,7 +69,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, TerrestrialPage.id);
+                  Navigator.pushNamed(context, TerrestrialView.id);
                 },
               ),
               const SizedBox(
@@ -79,7 +81,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, SuperEarthPage.id);
+                  Navigator.pushNamed(context, SuperEarthView.id);
                 },
               ),
               const SizedBox(
@@ -91,7 +93,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, UnknownPage.id);
+                  Navigator.pushNamed(context, UnknownView.id);
                 },
               ),
               const SizedBox(
@@ -103,7 +105,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, TerrestrialPage.id);
+                  Navigator.pushNamed(context, NeptuneLikeView.id);
                 },
               ),
               const SizedBox(
@@ -115,7 +117,7 @@ class CustomDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.white.withOpacity(0.8)),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, TerrestrialPage.id);
+                  Navigator.pushNamed(context, GasGiantView.id);
                 },
               ),
             ],

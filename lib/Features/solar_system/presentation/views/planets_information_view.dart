@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
 import 'package:p/Features/solar_system/presentation/views/widgets/custom_bottom_sheet.dart';
 import 'package:p/Features/solar_system/presentation/views/widgets/planet_3d_model.dart';
 
 class PlanetsInformationView extends StatelessWidget {
-  const PlanetsInformationView({super.key});
+  const PlanetsInformationView({super.key, required this.planetsInfoModel});
   static String id = 'PlanetsInformationView';
-
+  final PlanetsInfoModel planetsInfoModel;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +19,12 @@ class PlanetsInformationView extends StatelessWidget {
               child: Image.asset('images/stars.png'),
             ),
           ),
-          // const Planet3dModel(),
-          const CustomBottomSheet(),
+          Planet3dModel(
+            planetsInfoModel: planetsInfoModel,
+          ),
+          CustomBottomSheet(
+            planetsInfoModel: planetsInfoModel,
+          ),
         ],
       ),
     );

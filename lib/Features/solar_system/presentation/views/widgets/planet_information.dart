@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
 
 class PlanetInformation extends StatelessWidget {
   const PlanetInformation({
-    super.key,
+    super.key, required this.planetsInfoModel,
   });
-
+  final PlanetsInfoModel planetsInfoModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 16,
         bottom: 16,
       ),
@@ -17,42 +18,42 @@ class PlanetInformation extends StatelessWidget {
         children: [
           CustomRichText(
             title: '• Description : ',
-            subtitle: 'planetsModel.description',
+            subtitle: planetsInfoModel.description,
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Distance from the Sun : ',
-            subtitle: 'planetsModel.distance',
+            subtitle: planetsInfoModel.distance,
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Moons: : ',
-            subtitle: 'planetsModel.moons',
+            subtitle: planetsInfoModel.moons,
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Rings : ',
-            subtitle: 'planetsModel.rings',
+            subtitle: planetsInfoModel.rings,
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Atmosphere : ',
-            subtitle: ' planetsModel.atmosphere',
+            subtitle: planetsInfoModel.atmosphere,
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Surface Features : ',
-            subtitle: 'planetsModel.surfaceFeatures',
+            subtitle: planetsInfoModel.surfaceFeatures,
           ),
         ],
       ),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
 
 class Planet3dModel extends StatelessWidget {
-  const Planet3dModel({super.key});
-
+  const Planet3dModel({super.key, required this.planetsInfoModel});
+  final PlanetsInfoModel planetsInfoModel;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,13 +18,13 @@ class Planet3dModel extends StatelessWidget {
             topLeft: Radius.circular(28),
           ),
         ),
-        child: const AbsorbPointer(
+        child:  AbsorbPointer(
           child: ModelViewer(
             loading: Loading.eager,
             autoRotate: true,
             cameraControls: false,
             disableZoom: true,
-            src: 'images/earth.glb',
+            src: planetsInfoModel.model3D,
           ),
         ),
       ),

@@ -22,6 +22,7 @@ class BottomSheetOnboarding extends StatelessWidget {
       color: Colors.black,
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: isLastPage
+          // ignore: prefer_const_constructors
           ? CustomButton()
           : Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
-import 'package:p/Features/solar_system/presentation/view_models/planets_model.dart';
+
 import 'package:p/Features/solar_system/presentation/views/widgets/planet_information.dart';
 
 class CustomBottomSheet extends StatelessWidget {
   const CustomBottomSheet({
     super.key,
+    required this.planetsInfoModel,
   });
-  
+  final PlanetsInfoModel planetsInfoModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -35,14 +36,16 @@ class CustomBottomSheet extends StatelessWidget {
                 children: [
                   ListTile(
                     title: Text(
-                      'Earth',
+                      planetsInfoModel.title,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 30 // Color for "News"
                           ),
                     ),
-                    subtitle: PlanetInformation(),
+                    subtitle: PlanetInformation(
+                      planetsInfoModel: planetsInfoModel,
+                    ),
                   ),
                 ],
               ),
@@ -54,11 +57,3 @@ class CustomBottomSheet extends StatelessWidget {
   }
 }
 
-// trailing: IconButton(
-//                       onPressed: () {},
-//                       icon: const Icon(
-//                         Icons.play_arrow,
-//                         color: Colors.white,
-//                         size: 24,
-//                       ),
-//                     ),

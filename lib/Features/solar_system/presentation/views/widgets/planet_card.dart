@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/solar_system/presentation/view_models/planets_info_model.dart';
-import 'package:p/Features/solar_system/presentation/view_models/planets_model.dart';
 import 'package:p/Features/solar_system/presentation/views/planets_information_view.dart';
 import 'package:p/Features/solar_system/presentation/views/widgets/custom_button_arrow.dart';
-import 'package:p/cubit/planet_cubit.dart';
 
 class PlanetCard extends StatelessWidget {
   const PlanetCard({
@@ -11,7 +9,7 @@ class PlanetCard extends StatelessWidget {
     required this.planetsModel,
   });
 
-  final PlanetsModel planetsModel;
+  final PlanetsInfoModel planetsModel;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -35,7 +33,7 @@ class PlanetCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(
-                      height: 50,
+                      height: 60,
                     ),
                     Text(
                       planetsModel.title,
@@ -73,7 +71,9 @@ class PlanetCard extends StatelessWidget {
         ),
         CustomButtonArrow(
           onTap: () {
-            Navigator.pushNamed(context, PlanetsInformationView.id);
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return PlanetsInformationView(planetsInfoModel: planetsModel);
+            }));
           },
         ),
       ],
