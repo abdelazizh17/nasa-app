@@ -23,7 +23,7 @@ class SuperEarthCard extends StatelessWidget {
           'Exoplanet Name : ” ${superEarthModel.name} ”',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 22,
+            fontSize: 20,
             color: Color(0xffb7b4ac),
           ),
         ),

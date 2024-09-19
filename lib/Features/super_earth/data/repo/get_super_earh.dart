@@ -17,6 +17,20 @@ class GetSuperEarh {
       model3D: 'images/kepler_-_452b_planet.glb',
     ),
     SuperEarthModel(
+      name: 'Kepler-452b',
+      age: '6 billion years',
+      distance: '1,400 light-years away',
+      mass: '5 times Earth’s mass',
+      orbitalPeriod: '385 Earth days',
+      formationMaterial: 'Rocky, iron, and silicate',
+      discoveryMethod: 'Transit Method',
+      description: 'Orbits in the habitable zone of a Sun-like star',
+      funFact:
+          'Sometimes called "Earth 2.0" due to its potential for habitability',
+      image: 'images/superearth-7.webp',
+      model3D: 'images/kepler_-_452b_planet.glb',
+    ),
+    SuperEarthModel(
       name: 'Gliese 581d',
       age: '7-8 billion years',
       distance: '20.37 light-years away',
@@ -87,18 +101,49 @@ class GetSuperEarh {
       model3D: 'images/mars.glb',
     ),
     SuperEarthModel(
-      name: 'GJ 357 d',
-      age: '9 billion years',
-      distance: '31 light-years away',
-      mass: '6.1 times Earth’s mass',
-      orbitalPeriod: '55.7 Earth days',
-      formationMaterial: 'Rocky, with possible water vapor',
-      discoveryMethod: 'Radial Velocity',
-      description: 'Located in the habitable zone',
+      name: 'TOI-784 b',
+      age: '8 billion years',
+      distance: '211 light-years away',
+      mass: '9.67 times Earth’s mass',
+      orbitalPeriod: '2.82 Earth days',
+      formationMaterial: 'Rocky',
+      discoveryMethod: 'Transit',
       funFact:
-          'This planet may have conditions similar to Earth, with the possibility of liquid water',
+          'TOI-784 b is likely tidally locked, with one side in constant daylight and the other in permanent darkness',
       image: 'images/superearth-7.webp',
-      model3D: 'images/GJ_357_d_0912081732.glb',
+      model3D: 'images/LHS_1140_b_0912080521.glb',
+      description:
+          'TOI-784 b is a super Earth exoplanet that orbits a G-type star. Its mass is 9.67 Earths, it takes 2.8 days to complete one orbit of its star, and is 0.038 AU from its star. Its discovery was announced in 2023.', // Placeholder model
+    ),
+    SuperEarthModel(
+      name: '55 Cancri e (Janssen)',
+      distance: '41 light-years away',
+      mass: 'About 8 times Earth’s mass',
+      orbitalPeriod: 'Less than 18 hours',
+      formationMaterial:
+          'Likely a carbon planet with a possibly volatile atmosphere rich in carbon dioxide or carbon monoxide',
+      discoveryMethod: 'Radial Velocity (confirmed via Transit)',
+      funFact:
+          '55 Cancri e might have volcanic activity and is considered a carbon planet, which could mean it has a significant amount of diamond',
+      image: 'images/55Cancrie_illo.webp', // Placeholder image
+      model3D: 'images/55_Cancri_e_1_24364.glb', age: '7.4–8.7 billion years',
+      description:
+          'This super hot world is covered in a global ocean of lava and has sparkling skies.', // Placeholder model
+    ),
+    SuperEarthModel(
+      name: '55 Cancri e (Janssen)',
+      distance: '41 light-years away',
+      mass: 'About 8 times Earth’s mass',
+      orbitalPeriod: 'Less than 18 hours',
+      formationMaterial:
+          'Likely a carbon planet with a possibly volatile atmosphere rich in carbon dioxide or carbon monoxide',
+      discoveryMethod: 'Radial Velocity (confirmed via Transit)',
+      funFact:
+          '55 Cancri e might have volcanic activity and is considered a carbon planet, which could mean it has a significant amount of diamond',
+      image: 'images/55Cancrie_illo.webp', // Placeholder image
+     model3D: 'images/55_Cancri_e_1_24364.glb', age: '7.4–8.7 billion years',
+      description:
+          'This super hot world is covered in a global ocean of lava and has sparkling skies.', // Placeholder model
     ),
   ];
 }

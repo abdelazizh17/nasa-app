@@ -1,6 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:p/Features/gas_giant/presentation/view/gas_giant_quiz_view.dart';
 import 'package:p/Features/neptune_like/presentation/view/neptune_like.dart';
+import 'package:p/Features/neptune_like/presentation/view/neptune_quiz_view.dart';
+import 'package:p/Features/super_earth/presentation/view/super_earth_quiz_view.dart';
+import 'package:p/Features/terrestrial/presentation/view/terrestrial_quiz_view.dart';
 import 'package:p/Features/super_earth/presentation/view/super_earth_view.dart';
 import 'package:p/Features/terrestrial/presentation/view/terrestrial_view.dart';
 import 'package:p/firebase_options.dart';
@@ -41,6 +45,10 @@ class NasaApp extends StatelessWidget {
         SuperEarthView.id: (context) => const SuperEarthView(),
         NeptuneLikeView.id: (context) => const NeptuneLikeView(),
         Onboarding.id: (context) => const Onboarding(),
+        GasGiantQuizView.id: (context)=> const GasGiantQuizView(),
+        NeptuneQuizView.id: (context)=> const NeptuneQuizView(),
+        SuperEarthQuizView.id: (context)=> const SuperEarthQuizView(),
+        TerrestrialQuizView.id: (context)=> const TerrestrialQuizView(),
       },
       initialRoute: onboarding ? HomeView.id : Onboarding.id,
     );

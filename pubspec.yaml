@@ -87,6 +87,9 @@ flutter:
     - family: Product Sans Regular
       fonts:
         - asset: assets/Product Sans Regular.ttf
+    - family: Orbitron Regular
+      fonts:
+        - asset: assets/Orbitron-Regular.ttf 
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

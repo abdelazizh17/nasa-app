@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/onboarding/presentation/view_models/onboarding_model.dart';
+import 'package:p/Features/onboarding/data/models/onboarding_model.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({
     super.key,
-    required this.onboardingInfo, required this.index,
+    required this.onboardingInfo,
+    required this.index,
   });
 
   final List<OnboardingModel> onboardingInfo;

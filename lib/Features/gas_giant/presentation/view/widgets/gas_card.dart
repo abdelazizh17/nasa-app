@@ -23,7 +23,7 @@ class GasCard extends StatelessWidget {
           'Exoplanet Name : ” ${gasGiantModel.name} ”',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 22,
+            fontSize: 20,
             color: Color(0xffcdc09b),
           ),
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/onboarding/presentation/view_models/onboarding_model.dart';
+import 'package:p/Features/onboarding/data/models/onboarding_model.dart';
 import 'package:p/Features/onboarding/presentation/views/widgets/custom_button_onboarding.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
