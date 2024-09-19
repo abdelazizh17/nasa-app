@@ -1,8 +1,8 @@
 import 'package:appinio_swiper/appinio_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/data/get_gas_giant.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_card_informations.dart';
-import 'package:p/Features/gas_giant/presentation/view_models/gas_giant_model.dart';
+import 'package:p/Features/gas_giant/data/repo/get_gas_giant.dart';
+import 'package:p/Features/gas_giant/presentation/view/widgets/gas_card.dart';
+import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
 
 class GasAppinioSwiper extends StatefulWidget {
   const GasAppinioSwiper({
@@ -27,7 +27,9 @@ class _CustomAppinioSwiperState extends State<GasAppinioSwiper> {
             child: Container(
               alignment: Alignment.center,
               color: const Color(0xff3c3c3b),
-              child:  GasCardInformations(gasGiantModel: gasGiantList[index],),
+              child: GasCard(
+                gasGiantModel: gasGiantList[index],
+              ),
             ),
           ),
         );

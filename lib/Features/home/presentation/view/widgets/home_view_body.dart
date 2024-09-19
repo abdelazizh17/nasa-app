@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/home/presentation/view/widgets/icons_avatar.dart';
 
-import 'package:p/Features/solar_system/presentation/views/carousel_slider_view.dart';
+import 'package:p/Features/home/presentation/view/carousel_slider_view.dart';
 import 'package:p/Features/home/presentation/view/widgets/custom_app_bar.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -18,13 +18,13 @@ class HomeViewBody extends StatelessWidget {
             child: Image.asset('images/bg_stars.png'),
           ),
         ),
-        Column(
+        const Column(
           children: [
-            const CustomAppBar(),
+            CustomAppBar(),
             Expanded(
               child: Column(
                 children: [
-                  const Text(
+                  Text(
                     "Space\nExplorer",
                     style: TextStyle(
                       fontSize: 45,
@@ -34,12 +34,12 @@ class HomeViewBody extends StatelessWidget {
                   Expanded(
                     child: CarouselSliderView(),
                   ),
-                  const IconsAvatar(),
-                  const Text(
+                  IconsAvatar(),
+                  Text(
                     "John, evelin and 8 friends are online",
                     style: TextStyle(fontSize: 10),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: 20,
                   )
                 ],

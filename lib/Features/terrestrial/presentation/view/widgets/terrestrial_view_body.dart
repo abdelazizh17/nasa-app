@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/core/slide_card.dart';
+import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_appinio_slide_card.dart';
 
 class TerrestrialViewBody extends StatelessWidget {
   const TerrestrialViewBody({
@@ -14,7 +14,7 @@ class TerrestrialViewBody extends StatelessWidget {
           'images/space wallpaper.jfif',
           fit: BoxFit.fill,
         ),
-        const SlideCard(name: 'Terrestrial', color: Colors.white,),
+        const TerrestrialAppinioSlideCard(name: 'Terrestrial', color: Colors.white,),
       ]),
     );
   }

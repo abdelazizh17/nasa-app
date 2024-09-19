@@ -1,9 +1,9 @@
 import 'package:appinio_swiper/appinio_swiper.dart';
 import 'package:flutter/material.dart';
 
-import 'package:p/Features/terrestrial/data/get_terrestrial.dart';
-import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_card_informations.dart';
-import 'package:p/Features/terrestrial/presentation/view_models/terrestrial_model.dart';
+import 'package:p/Features/terrestrial/data/repo/get_terrestrial.dart';
+import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_card.dart';
+import 'package:p/Features/terrestrial/data/models/terrestrial_model.dart';
 
 class TerrestrialAppinioSwiper extends StatefulWidget {
   const TerrestrialAppinioSwiper({
@@ -28,7 +28,9 @@ class _CustomAppinioSwiperState extends State<TerrestrialAppinioSwiper> {
             child: Container(
               alignment: Alignment.center,
               color: const Color(0xff3c3c3b),
-              child:  TerrestrialCardInformations(terrestrialModel: terrestrialModel[index],),
+              child: TerrestrialCard(
+                terrestrialModel: terrestrialModel[index],
+              ),
             ),
           ),
         );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/core/slide_card.dart';
+import 'package:p/Features/super_earth/presentation/view/widgets/super_earth_slide_card.dart';
 
 class SuperEarthViewBody extends StatelessWidget {
   const SuperEarthViewBody({
@@ -14,7 +14,7 @@ class SuperEarthViewBody extends StatelessWidget {
           'images/space wallpaper.jfif',
           fit: BoxFit.fill,
         ),
-        const SlideCard(name: 'Super Earth', color: Color(0xffb7b4ac),),
+        const SuperEarthSlideCard(name: 'Super Earth', color: Color(0xffb7b4ac),),
       ]),
     );
   }

@@ -5,7 +5,6 @@ import 'package:p/Features/super_earth/presentation/view/super_earth_view.dart';
 import 'package:p/Features/terrestrial/presentation/view/terrestrial_view.dart';
 import 'package:p/firebase_options.dart';
 import 'package:p/Features/gas_giant/presentation/view/gas_giant_view.dart';
-
 import 'package:p/Features/onboarding/presentation/views/onboarding.dart';
 import 'package:p/Features/home/presentation/view/home_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -28,7 +27,7 @@ class NasaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(                                                                                                                                                                                                                                                                                                                                                                                                    
       theme: ThemeData(
         fontFamily: 'Product Sans Regular',
         brightness: Brightness.dark,

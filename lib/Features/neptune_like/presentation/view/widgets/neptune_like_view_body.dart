@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/core/slide_card.dart';
+import 'package:p/Features/neptune_like/presentation/view/widgets/neptune_like_slide_card.dart';
 
 class NeptuneLikeViewBody extends StatelessWidget {
   const NeptuneLikeViewBody({
@@ -14,7 +14,7 @@ class NeptuneLikeViewBody extends StatelessWidget {
           'images/space wallpaper.jfif',
           fit: BoxFit.fill,
         ),
-        const SlideCard(name: 'Neptune Like', color: Colors.white,),
+        const NeptuneLikeSlideCard(name: 'Neptune Like', color: Colors.white,),
       ]),
     );
   }

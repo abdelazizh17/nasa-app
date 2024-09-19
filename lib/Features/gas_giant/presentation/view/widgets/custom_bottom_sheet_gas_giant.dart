@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_information.dart';
-import 'package:p/Features/gas_giant/presentation/view_models/gas_giant_model.dart';
+import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_details.dart';
+import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
 
 class CustomBottomSheetGasGiant extends StatelessWidget {
   const CustomBottomSheetGasGiant({super.key, required this.gasGiantModel});
@@ -11,7 +11,7 @@ class CustomBottomSheetGasGiant extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
-          height: 440,
+          height: 480,
           width: double.infinity,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:p/Features/onboarding/presentation/view_models/onboarding_model.dart';
 import 'package:p/Features/onboarding/presentation/views/widgets/custom_button_onboarding.dart';
@@ -20,7 +19,7 @@ class BottomSheetOnboarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black,
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 35),
       child: isLastPage
           // ignore: prefer_const_constructors
           ? CustomButton()

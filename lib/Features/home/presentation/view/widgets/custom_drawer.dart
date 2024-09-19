@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/gas_giant_view.dart';
-import 'package:p/Features/neptune_like/presentation/view/neptune_like.dart';
-import 'package:p/Features/super_earth/presentation/view/super_earth_view.dart';
-import 'package:p/Features/home/presentation/view/home_view.dart';
-import 'package:p/Features/terrestrial/presentation/view/terrestrial_view.dart';
+import 'package:p/Features/home/presentation/view/widgets/account_info.dart';
+import 'package:p/Features/home/presentation/view/widgets/exoplane_menu.dart';
+import 'package:p/Features/home/presentation/view/widgets/solar_system_menu.dart';
+
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
@@ -15,110 +14,21 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+    return const Drawer(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
         child: SafeArea(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Image.asset(
-                    'images/ic_avatar_4.png',
-                    width: 50,
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text('Hello,\nYuri Gagarin'),
-                ],
-              ),
-              const SizedBox(
+              AccountInfo(),
+              SizedBox(
                 height: 20,
               ),
-              const Text(
-                '─────   Solar System   ─────',
-                style: TextStyle(fontSize: 18),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Planets Of Solar System',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, HomeView.id);
-                },
-              ),
-              const SizedBox(
+              SolarSystemMenu(),
+              SizedBox(
                 height: 20,
               ),
-              const Text(
-                '─────   Exoplanets   ─────',
-                style: TextStyle(fontSize: 18),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Terrestrial',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, TerrestrialView.id);
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Super Earth',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, SuperEarthView.id);
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Unknown',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, TerrestrialView.id);
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Neptune-like',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, NeptuneLikeView.id);
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                title: Text(
-                  'Gas Giant',
-                  style: TextStyle(color: Colors.white.withOpacity(0.8)),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, GasGiantView.id);
-                },
-              ),
+              ExoplanetMenu(),
             ],
           ),
         ),
@@ -126,3 +36,8 @@ class CustomDrawer extends StatelessWidget {
     );
   }
 }
+
+
+
+
+

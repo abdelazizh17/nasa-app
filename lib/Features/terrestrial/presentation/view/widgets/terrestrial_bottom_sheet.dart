@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_information.dart';
-import 'package:p/Features/terrestrial/presentation/view_models/terrestrial_model.dart';
+import 'package:p/Features/terrestrial/data/models/terrestrial_model.dart';
 
 class TerrestrialBottomSheet extends StatelessWidget {
   const TerrestrialBottomSheet({super.key, required this.terrestrialModel});
@@ -11,7 +10,7 @@ class TerrestrialBottomSheet extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
-          height: 440,
+          height: 480,
           width: double.infinity,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(

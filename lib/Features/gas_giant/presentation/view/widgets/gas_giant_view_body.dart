@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p/core/slide_card.dart';
+import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_slide_card.dart';
 
 class GasGiantViewBody extends StatelessWidget {
   const GasGiantViewBody({
@@ -14,7 +14,7 @@ class GasGiantViewBody extends StatelessWidget {
           'images/space wallpaper.jfif',
           fit: BoxFit.fill,
         ),
-        const SlideCard(
+        const GasGiantSlideCard(
           name: 'Gas Giant',
           color: Color(0xffcdc09b),
         ),

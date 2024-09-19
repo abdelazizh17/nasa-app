@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/neptune_like/presentation/view/widgets/neptune_like_information.dart';
-import 'package:p/Features/neptune_like/presentation/view_models/neptune_like_model.dart';
+import 'package:p/Features/neptune_like/presentation/view/widgets/neptune_like_details.dart';
+import 'package:p/Features/neptune_like/data/models/neptune_like_model.dart';
 
 class NeptuneLikeBottomSheet extends StatelessWidget {
   const NeptuneLikeBottomSheet({super.key, required this.neptuneLikeModel});
@@ -11,7 +11,7 @@ class NeptuneLikeBottomSheet extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
-          height: 440,
+          height: 480,
           width: double.infinity,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
@@ -20,7 +20,7 @@ class NeptuneLikeBottomSheet extends StatelessWidget {
             ),
             color: Color(0xff161616),
           ),
-          child:  SingleChildScrollView(
+          child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Padding(
               padding: const EdgeInsets.symmetric(
@@ -32,14 +32,16 @@ class NeptuneLikeBottomSheet extends StatelessWidget {
                 children: [
                   ListTile(
                     title: Text(
-                    neptuneLikeModel.name ,
+                      neptuneLikeModel.name,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 30 // Color for "News"
                           ),
                     ),
-                    subtitle:  NeptuneLikeInformation(neptuneLikeModel: neptuneLikeModel,),
+                    subtitle: NeptuneLikeDetails(
+                      neptuneLikeModel: neptuneLikeModel,
+                    ),
                   ),
                 ],
               ),

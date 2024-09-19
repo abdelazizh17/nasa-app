@@ -23,18 +23,15 @@ class _OnboardingState extends State<Onboarding> {
           isLastPage: isLastPage,
           pageController: pageController,
           onboardingInfo: onboardingInfo),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8),
-        child: PageView.builder(
-          onPageChanged: (index) => setState(() {
-            isLastPage = onboardingInfo.length - 1 == index;
-          }),
-          controller: pageController,
-          itemCount: onboardingInfo.length,
-          itemBuilder: (context, index) {
-            return OnboardingBody(onboardingInfo: onboardingInfo, index: index,);
-          },
-        ),
+      body: PageView.builder(
+        onPageChanged: (index) => setState(() {
+          isLastPage = onboardingInfo.length - 1 == index;
+        }),
+        controller: pageController,
+        itemCount: onboardingInfo.length,
+        itemBuilder: (context, index) {
+          return OnboardingBody(onboardingInfo: onboardingInfo, index: index,);
+        },
       ),
     );
   }
