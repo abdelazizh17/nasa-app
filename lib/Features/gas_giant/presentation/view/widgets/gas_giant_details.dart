@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
+import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';
 
 class GasGiantInformation extends StatelessWidget {
@@ -17,56 +18,56 @@ class GasGiantInformation extends StatelessWidget {
         children: [
           CustomRichText(
             title: '• Description : ',
-            subtitle: gasGiantModel.description,
+            subtitle: gasGiantModel.description, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Age: : ',
-            subtitle: gasGiantModel.age,
+            subtitle: gasGiantModel.age, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Distance from earth : ',
-            subtitle: gasGiantModel.distance,
+            subtitle: gasGiantModel.distance, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Mass : ',
-            subtitle: gasGiantModel.mass,
+            subtitle: gasGiantModel.mass, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Orbital Period : ',
-            subtitle: gasGiantModel.orbitalPeriod,
+            subtitle: gasGiantModel.orbitalPeriod, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Formation Material : ',
-            subtitle: gasGiantModel.formationMaterial,
+            subtitle: gasGiantModel.formationMaterial, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Discovery Method : ',
-            subtitle: gasGiantModel.discoveryMethod,
+            subtitle: gasGiantModel.discoveryMethod, color: gasGiantColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Fun Fact : ',
-            subtitle: gasGiantModel.funFact,
+            subtitle: gasGiantModel.funFact, color: gasGiantColor,
           ),
         ],
       ),

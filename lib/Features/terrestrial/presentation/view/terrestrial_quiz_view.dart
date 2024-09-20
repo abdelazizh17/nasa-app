@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:p/Features/terrestrial/data/repo/get_terrestrial_quiz.dart';
 import 'package:p/core/models/quiz_model.dart';
 import 'package:p/core/widgets/options_card.dart';
 import 'package:p/core/widgets/question_widget.dart';
@@ -15,38 +18,7 @@ class TerrestrialQuizView extends StatefulWidget {
 }
 
 class _QuizViewState extends State<TerrestrialQuizView> {
-  List<QuizModel> questions = [
-    QuizModel(
-      id: '10',
-      title: 'Whats is 2 + 2',
-      options: {
-        '5': false,
-        '4': true,
-        '6': false,
-        '30': false,
-      },
-    ),
-    QuizModel(
-      id: '11',
-      title: 'Whats is 4 + 5',
-      options: {
-        '2': false,
-        '4': false,
-        '9': true,
-        '10': false,
-      },
-    ),
-    QuizModel(
-      id: '10',
-      title: 'Whats is 6 + 2',
-      options: {
-        '5': false,
-        '4': false,
-        '6': false,
-        '8': true,
-      },
-    ),
-  ];
+  List<QuizModel> questions = GetTerrestrialQuiz.questions;
   int index = 0;
   int score = 0;
   bool isPressed = false;
@@ -61,7 +33,7 @@ class _QuizViewState extends State<TerrestrialQuizView> {
                 onTap: startOver,
                 result: score,
                 questionLength: questions.length,
-                color: Colors.white,
+                color: terrestrialColor,
               ));
     } else {
       if (isPressed) {
@@ -107,6 +79,7 @@ class _QuizViewState extends State<TerrestrialQuizView> {
       score = 0;
       isPressed = false;
       isAlreadySelected = false;
+      questions.shuffle(Random());
     });
     Navigator.of(context).pop();
   }
@@ -129,39 +102,43 @@ class _QuizViewState extends State<TerrestrialQuizView> {
       ),
       body: SizedBox(
         width: double.infinity,
-        child: Column(
-          children: [
-            QuestionWidget(
-              question: questions[index].title,
-              indexAction: index,
-              totalQuestions: questions.length,
-            ),
-            const Divider(
-              color: neutral,
-            ),
-            const SizedBox(
-              height: 25,
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: questions[index].options.length,
-                itemBuilder: (context, i) {
-                  return GestureDetector(
-                    onTap: () => checkAnswerAndUpdate(
-                        questions[index].options.values.toList()[i]),
-                    child: OptionsCard(
-                      options: questions[index].options.keys.toList()[i],
-                      color: isPressed
-                          ? questions[index].options.values.toList()[i] == true
-                              ? correct
-                              : incorrect
-                          : gasGiantColor,
-                    ),
-                  );
-                },
+        child: Padding(
+          padding: edgeInsest,
+          child: Column(
+            children: [
+              QuestionWidget(
+                question: questions[index].title,
+                indexAction: index,
+                totalQuestions: questions.length,
               ),
-            )
-          ],
+              const Divider(
+                color: neutral,
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: questions[index].options.length,
+                  itemBuilder: (context, i) {
+                    return GestureDetector(
+                      onTap: () => checkAnswerAndUpdate(
+                          questions[index].options.values.toList()[i]),
+                      child: OptionsCard(
+                        options: questions[index].options.keys.toList()[i],
+                        color: isPressed
+                            ? questions[index].options.values.toList()[i] ==
+                                    true
+                                ? correct
+                                : incorrect
+                            : terrestrialColor,
+                      ),
+                    );
+                  },
+                ),
+              )
+            ],
+          ),
         ),
       ),
       floatingActionButton: SizedBox(
@@ -171,7 +148,7 @@ class _QuizViewState extends State<TerrestrialQuizView> {
             child: CustomButton(
               onTap: nextQuestion,
               text: 'Next Question',
-              color: gasGiantColor,
+              color: terrestrialColor,
             ),
           )),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

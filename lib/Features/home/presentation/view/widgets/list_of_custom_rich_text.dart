@@ -13,6 +13,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Description : ',
           subtitle: planetsInfoModel.description,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -20,6 +21,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Distance from the Sun : ',
           subtitle: planetsInfoModel.distance,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -27,6 +29,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Moons: : ',
           subtitle: planetsInfoModel.moons,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -34,6 +37,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Rings : ',
           subtitle: planetsInfoModel.rings,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -41,6 +45,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Atmosphere : ',
           subtitle: planetsInfoModel.atmosphere,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -48,6 +53,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Surface Features : ',
           subtitle: planetsInfoModel.surfaceFeatures,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -55,6 +61,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Exploration : ',
           subtitle: planetsInfoModel.exploration,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -62,6 +69,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Potential for Life : ',
           subtitle: planetsInfoModel.potentialForLife,
+          color: Colors.white,
         ),
         const SizedBox(
           height: 12,
@@ -69,6 +77,7 @@ class ListOfCustomRichText extends StatelessWidget {
         CustomRichText(
           title: '• Fun Facts : ',
           subtitle: planetsInfoModel.funFacts,
+          color: Colors.white,
         ),
       ],
     );

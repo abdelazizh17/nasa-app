@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/neptune_like/presentation/view/widgets/neptune_like_details.dart';
 import 'package:p/Features/neptune_like/data/models/neptune_like_model.dart';
+import 'package:p/constants.dart';
 
 class NeptuneLikeBottomSheet extends StatelessWidget {
   const NeptuneLikeBottomSheet({super.key, required this.neptuneLikeModel});
@@ -18,7 +19,7 @@ class NeptuneLikeBottomSheet extends StatelessWidget {
               topRight: Radius.circular(28),
               topLeft: Radius.circular(28),
             ),
-            color: Color(0xff161616),
+            color: Color(0xff264642),
           ),
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -35,7 +36,7 @@ class NeptuneLikeBottomSheet extends StatelessWidget {
                       neptuneLikeModel.name,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: neptuneLikeColor,
                           fontSize: 30 // Color for "News"
                           ),
                     ),

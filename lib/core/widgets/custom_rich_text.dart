@@ -4,9 +4,10 @@ class CustomRichText extends StatelessWidget {
   const CustomRichText({
     super.key,
     required this.title,
-    required this.subtitle,
+    required this.subtitle, required this.color,
   });
   final String title, subtitle;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return RichText(
@@ -14,16 +15,17 @@ class CustomRichText extends StatelessWidget {
         children: [
           TextSpan(
             text: title,
-            style: const TextStyle(
+            style:  TextStyle(
                 fontWeight: FontWeight.bold,
-                color: Color(0xffBFBFBF),
-                fontSize: 16 // Color for "News"
+                color: color,
+                fontSize: 20 // Color for "News"
                 ),
           ),
           TextSpan(
             text: subtitle,
-            style: const TextStyle(
-                color: Color(0xffBFBFBF), fontSize: 13 // Color for "Cloud"
+            style: TextStyle(
+                color: color.withOpacity(0.7),
+                fontSize: 16 // Color for "Cloud"
                 ),
           ),
         ],

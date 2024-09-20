@@ -7,6 +7,8 @@ import 'package:p/Features/super_earth/presentation/view/super_earth_quiz_view.d
 import 'package:p/Features/terrestrial/presentation/view/terrestrial_quiz_view.dart';
 import 'package:p/Features/super_earth/presentation/view/super_earth_view.dart';
 import 'package:p/Features/terrestrial/presentation/view/terrestrial_view.dart';
+import 'package:p/Features/unknown_exoplanet/presentation/view/unkown_quiz_view.dart';
+import 'package:p/Features/unknown_exoplanet/presentation/view/unkown_view.dart';
 import 'package:p/firebase_options.dart';
 import 'package:p/Features/gas_giant/presentation/view/gas_giant_view.dart';
 import 'package:p/Features/onboarding/presentation/views/onboarding.dart';
@@ -31,7 +33,7 @@ class NasaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(                                                                                                                                                                                                                                                                                                                                                                                                    
+    return MaterialApp(
       theme: ThemeData(
         fontFamily: 'Product Sans Regular',
         brightness: Brightness.dark,
@@ -44,11 +46,13 @@ class NasaApp extends StatelessWidget {
         TerrestrialView.id: (context) => const TerrestrialView(),
         SuperEarthView.id: (context) => const SuperEarthView(),
         NeptuneLikeView.id: (context) => const NeptuneLikeView(),
+        UnkownView.id: (context) => const UnkownView(),
         Onboarding.id: (context) => const Onboarding(),
-        GasGiantQuizView.id: (context)=> const GasGiantQuizView(),
-        NeptuneQuizView.id: (context)=> const NeptuneQuizView(),
-        SuperEarthQuizView.id: (context)=> const SuperEarthQuizView(),
-        TerrestrialQuizView.id: (context)=> const TerrestrialQuizView(),
+        GasGiantQuizView.id: (context) => const GasGiantQuizView(),
+        NeptuneQuizView.id: (context) => const NeptuneQuizView(),
+        SuperEarthQuizView.id: (context) => const SuperEarthQuizView(),
+        TerrestrialQuizView.id: (context) => const TerrestrialQuizView(),
+        UnkownQuizView.id: (context) => const UnkownQuizView(),
       },
       initialRoute: onboarding ? HomeView.id : Onboarding.id,
     );

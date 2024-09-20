@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/terrestrial/data/models/terrestrial_model.dart';
+import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_giant_details.dart';
+import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_giant_details_view.dart';
+import 'package:p/constants.dart';
 
 class TerrestrialBottomSheet extends StatelessWidget {
   const TerrestrialBottomSheet({super.key, required this.terrestrialModel});
@@ -17,7 +20,7 @@ class TerrestrialBottomSheet extends StatelessWidget {
               topRight: Radius.circular(28),
               topLeft: Radius.circular(28),
             ),
-            color: Color(0xff161616),
+            color: Color(0xff482d15),
           ),
           child:  SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -34,11 +37,11 @@ class TerrestrialBottomSheet extends StatelessWidget {
                     terrestrialModel.name ,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: terrestrialColor,
                           fontSize: 30 // Color for "News"
                           ),
                     ),
-                    subtitle:  TerrestrialBottomSheet(terrestrialModel: terrestrialModel,),
+                    subtitle:  TerrestrialGiantDetails(terrestrialModel: terrestrialModel,),
                   ),
                 ],
               ),

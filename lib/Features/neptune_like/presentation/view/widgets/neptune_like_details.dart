@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/neptune_like/data/models/neptune_like_model.dart';
 import 'package:p/Features/super_earth/presentation/view/widgets/super_earth_details.dart';
+import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';
 
 class NeptuneLikeDetails extends StatelessWidget {
@@ -18,56 +19,56 @@ class NeptuneLikeDetails extends StatelessWidget {
         children: [
           CustomRichText(
             title: '• Description : ',
-            subtitle: neptuneLikeModel.description,
+            subtitle: neptuneLikeModel.description, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Age: : ',
-            subtitle: neptuneLikeModel.age,
+            subtitle: neptuneLikeModel.age, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Distance from earth : ',
-            subtitle: neptuneLikeModel.distance,
+            subtitle: neptuneLikeModel.distance, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Mass : ',
-            subtitle: neptuneLikeModel.mass,
+            subtitle: neptuneLikeModel.mass, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Orbital Period : ',
-            subtitle: neptuneLikeModel.orbitalPeriod,
+            subtitle: neptuneLikeModel.orbitalPeriod, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Formation Material : ',
-            subtitle: neptuneLikeModel.formationMaterial,
+            subtitle: neptuneLikeModel.formationMaterial, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Discovery Method : ',
-            subtitle: neptuneLikeModel.discoveryMethod,
+            subtitle: neptuneLikeModel.discoveryMethod, color: neptuneLikeColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Fun Fact : ',
-            subtitle: neptuneLikeModel.funFact,
+            subtitle: neptuneLikeModel.funFact, color: neptuneLikeColor,
           ),
         ],
       ),

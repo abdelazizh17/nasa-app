@@ -25,8 +25,8 @@ class NeptuneBackGround extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushNamed(NeptuneQuizView.id);
               },
-              child:
-                  const CustomButton(text: 'Start Quizz', color: gasGiantColor),
+              child: const CustomButton(
+                  text: 'Start Quizz', color: neptuneLikeColor),
             ),
           ),
         ),

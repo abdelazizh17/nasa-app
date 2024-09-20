@@ -3,6 +3,7 @@ import 'package:p/Features/gas_giant/presentation/view/gas_giant_view.dart';
 import 'package:p/Features/neptune_like/presentation/view/neptune_like.dart';
 import 'package:p/Features/super_earth/presentation/view/super_earth_view.dart';
 import 'package:p/Features/terrestrial/presentation/view/terrestrial_view.dart';
+import 'package:p/Features/unknown_exoplanet/presentation/view/unkown_view.dart';
 
 class ExoplanetMenu extends StatelessWidget {
   const ExoplanetMenu({super.key});
@@ -48,7 +49,7 @@ class ExoplanetMenu extends StatelessWidget {
             style: TextStyle(color: Colors.white.withOpacity(0.8)),
           ),
           onTap: () {
-            Navigator.pushNamed(context, TerrestrialView.id);
+            Navigator.pushNamed(context, UnkownView.id);
           },
         ),
         const SizedBox(

@@ -32,7 +32,8 @@ class _QuizViewState extends State<GasGiantQuizView> {
           builder: (context) => ResultBox(
                 onTap: startOver,
                 result: score,
-                questionLength: questions.length, color: gasGiantColor,
+                questionLength: questions.length,
+                color: gasGiantColor,
               ));
     } else {
       if (isPressed) {
@@ -78,6 +79,7 @@ class _QuizViewState extends State<GasGiantQuizView> {
       score = 0;
       isPressed = false;
       isAlreadySelected = false;
+      questions.shuffle(Random());
     });
     Navigator.of(context).pop();
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/super_earth/presentation/view/widgets/super_earth_details.dart';
 import 'package:p/Features/super_earth/data/models/super_earth_model.dart';
+import 'package:p/constants.dart';
 
 class SuperEarthBottomSheet extends StatelessWidget {
   const SuperEarthBottomSheet({super.key, required this.superEarthModel});
@@ -18,7 +19,7 @@ class SuperEarthBottomSheet extends StatelessWidget {
               topRight: Radius.circular(28),
               topLeft: Radius.circular(28),
             ),
-            color: Color(0xff161616),
+            color: Color(0xff131312),
           ),
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -35,7 +36,7 @@ class SuperEarthBottomSheet extends StatelessWidget {
                       superEarthModel.name,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: superEarthColor,
                           fontSize: 30 // Color for "News"
                           ),
                     ),

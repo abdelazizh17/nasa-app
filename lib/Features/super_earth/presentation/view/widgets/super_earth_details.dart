@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/super_earth/data/models/super_earth_model.dart';
+import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';
 
 class SuperEarthDetails extends StatelessWidget {
@@ -17,56 +18,56 @@ class SuperEarthDetails extends StatelessWidget {
         children: [
           CustomRichText(
             title: '• Description : ',
-            subtitle: superEarthModel.description,
+            subtitle: superEarthModel.description, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Age: : ',
-            subtitle: superEarthModel.age,
+            subtitle: superEarthModel.age, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Distance from earth : ',
-            subtitle: superEarthModel.distance,
+            subtitle: superEarthModel.distance, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Mass : ',
-            subtitle: superEarthModel.mass,
+            subtitle: superEarthModel.mass, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Orbital Period : ',
-            subtitle: superEarthModel.orbitalPeriod,
+            subtitle: superEarthModel.orbitalPeriod, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Formation Material : ',
-            subtitle: superEarthModel.formationMaterial,
+            subtitle: superEarthModel.formationMaterial, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Discovery Method : ',
-            subtitle: superEarthModel.discoveryMethod,
+            subtitle: superEarthModel.discoveryMethod, color: superEarthColor,
           ),
           const SizedBox(
             height: 12,
           ),
           CustomRichText(
             title: '• Fun Fact : ',
-            subtitle: superEarthModel.funFact,
+            subtitle: superEarthModel.funFact, color: superEarthColor,
           ),
         ],
       ),

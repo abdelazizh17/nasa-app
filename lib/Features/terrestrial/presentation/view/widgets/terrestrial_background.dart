@@ -27,7 +27,7 @@ class TerrestrialBackground extends StatelessWidget {
                 Navigator.of(context).pushNamed(TerrestrialQuizView.id);
               },
               child:
-                  const CustomButton(text: 'Start Quizz', color: gasGiantColor),
+                  const CustomButton(text: 'Start Quizz', color: terrestrialColor),
             ),
           ),
         ),

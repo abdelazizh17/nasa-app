@@ -86,7 +86,7 @@ class ResultBox extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).pushNamed(HomeView.id);
+                Navigator.popUntil(context, ModalRoute.withName(HomeView.id));
               },
               child: Text(
                 'Go To Home',

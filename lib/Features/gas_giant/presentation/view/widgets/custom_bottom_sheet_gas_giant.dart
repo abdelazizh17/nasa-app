@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_details.dart';
 import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
+import 'package:p/constants.dart';
 
 class CustomBottomSheetGasGiant extends StatelessWidget {
   const CustomBottomSheetGasGiant({super.key, required this.gasGiantModel});
@@ -18,7 +19,7 @@ class CustomBottomSheetGasGiant extends StatelessWidget {
               topRight: Radius.circular(28),
               topLeft: Radius.circular(28),
             ),
-            color: Color(0xff161616),
+            color: Color(0xff3c3c3b),
           ),
           child:  SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -35,7 +36,7 @@ class CustomBottomSheetGasGiant extends StatelessWidget {
                     gasGiantModel.name ,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: gasGiantColor,
                           fontSize: 30 // Color for "News"
                           ),
                     ),

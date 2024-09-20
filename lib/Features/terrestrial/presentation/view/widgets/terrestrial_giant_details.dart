@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/terrestrial/data/models/terrestrial_model.dart';
+import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';
 
 class TerrestrialGiantDetails extends StatelessWidget {
@@ -18,6 +19,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Description : ',
             subtitle: terrestrialModel.description,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -25,6 +27,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Age: : ',
             subtitle: terrestrialModel.age,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -32,6 +35,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Distance from earth : ',
             subtitle: terrestrialModel.distance,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -39,6 +43,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Mass : ',
             subtitle: terrestrialModel.mass,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -46,6 +51,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Orbital Period : ',
             subtitle: terrestrialModel.orbitalPeriod,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -53,6 +59,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Formation Material : ',
             subtitle: terrestrialModel.formationMaterial,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -60,6 +67,7 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Discovery Method : ',
             subtitle: terrestrialModel.discoveryMethod,
+            color: terrestrialColor,
           ),
           const SizedBox(
             height: 12,
@@ -67,10 +75,10 @@ class TerrestrialGiantDetails extends StatelessWidget {
           CustomRichText(
             title: '• Fun Fact : ',
             subtitle: terrestrialModel.funFact,
+            color: terrestrialColor,
           ),
         ],
       ),
     );
   }
 }
-

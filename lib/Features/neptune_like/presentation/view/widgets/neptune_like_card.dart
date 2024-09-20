@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/neptune_like/presentation/view/widgets/neptune_like_details_view.dart';
 import 'package:p/Features/neptune_like/data/models/neptune_like_model.dart';
+import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_button.dart';
 
 class NeptuneLikeCard extends StatelessWidget {
@@ -23,8 +24,8 @@ class NeptuneLikeCard extends StatelessWidget {
           'Exoplanet Name : ” ${neptuneLikeModel.name} ”',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 22,
-            color: Color(0xffcdc09b),
+            fontSize: 20,
+            color: neptuneLikeColor
           ),
         ),
         const SizedBox(
@@ -39,7 +40,7 @@ class NeptuneLikeCard extends StatelessWidget {
             }));
           },
           text: 'Explore Planet',
-          color: const Color(0xffcdc09b),
+          color: neptuneLikeColor
         ),
       ],
     );

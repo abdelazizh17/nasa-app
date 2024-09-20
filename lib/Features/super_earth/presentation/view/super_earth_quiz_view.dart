@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:p/Features/super_earth/data/repo/get_super_earth_quiz.dart';
 import 'package:p/core/models/quiz_model.dart';
@@ -77,6 +79,7 @@ class _QuizViewState extends State<SuperEarthQuizView> {
       score = 0;
       isPressed = false;
       isAlreadySelected = false;
+      questions.shuffle(Random());
     });
     Navigator.of(context).pop();
   }
