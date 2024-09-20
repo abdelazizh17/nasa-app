@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_gaint_back_ground.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_slide_card.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/unkown_back_ground.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/unkown_slide_card.dart';
 import 'package:p/constants.dart';
@@ -21,7 +19,7 @@ class UnknownViewBody extends StatelessWidget {
             fit: BoxFit.fill,
           ),
           const UnkownBackGround(),
-          UnkownSlideCard(
+          const UnkownSlideCard(
             name: 'Unknown',
             color: unkownColor,
           ),

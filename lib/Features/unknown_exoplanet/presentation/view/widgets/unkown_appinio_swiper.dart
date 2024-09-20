@@ -1,8 +1,5 @@
 import 'package:appinio_swiper/appinio_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/data/repo/get_gas_giant.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_card.dart';
-import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
 import 'package:p/Features/unknown_exoplanet/data/models/unkown_model.dart';
 import 'package:p/Features/unknown_exoplanet/data/repo/get_unkown.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/unkown_card.dart';

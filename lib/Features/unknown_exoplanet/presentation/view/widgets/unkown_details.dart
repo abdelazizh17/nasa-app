@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
 import 'package:p/Features/unknown_exoplanet/data/models/unkown_model.dart';
 import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_appinio_swiper.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/unkown_appinio_swiper.dart';
 
 

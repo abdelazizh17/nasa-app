@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/neptune_like/data/models/neptune_like_model.dart';
-import 'package:p/Features/super_earth/presentation/view/widgets/super_earth_details.dart';
 import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_rich_text.dart';
 

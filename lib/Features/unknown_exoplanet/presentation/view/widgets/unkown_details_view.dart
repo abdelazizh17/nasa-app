@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/custom_bottom_sheet_gas_giant.dart';
-import 'package:p/Features/gas_giant/presentation/view/widgets/gas_giant_3d_model.dart';
-import 'package:p/Features/gas_giant/data/models/gas_giant_model.dart';
 import 'package:p/Features/unknown_exoplanet/data/models/unkown_model.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/custom_bottom_sheet_unkown.dart';
 import 'package:p/Features/unknown_exoplanet/presentation/view/widgets/unkown_3d_model.dart';

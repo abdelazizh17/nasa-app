@@ -1,7 +1,5 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/data/repo/get_gas_giant_quiz.dart';
 import 'package:p/Features/unknown_exoplanet/data/repo/get_unkown_quiz.dart';
 import 'package:p/core/models/quiz_model.dart';
 import 'package:p/core/widgets/options_card.dart';

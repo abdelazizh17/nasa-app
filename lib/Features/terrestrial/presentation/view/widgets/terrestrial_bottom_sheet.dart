@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:p/Features/terrestrial/data/models/terrestrial_model.dart';
 import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_giant_details.dart';
-import 'package:p/Features/terrestrial/presentation/view/widgets/terrestrial_giant_details_view.dart';
 import 'package:p/constants.dart';
 
 class TerrestrialBottomSheet extends StatelessWidget {

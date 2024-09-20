@@ -9,6 +9,7 @@ class QuizModel {
     required this.options,
   });
 
+  @override
   String toString() {
     return 'Question(id: $id, title: $title, options: $options)';
   }

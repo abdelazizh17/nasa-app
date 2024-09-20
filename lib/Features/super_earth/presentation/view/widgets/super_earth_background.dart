@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p/Features/gas_giant/presentation/view/gas_giant_quiz_view.dart';
 import 'package:p/Features/super_earth/presentation/view/super_earth_quiz_view.dart';
 import 'package:p/constants.dart';
 import 'package:p/core/widgets/custom_button.dart';
