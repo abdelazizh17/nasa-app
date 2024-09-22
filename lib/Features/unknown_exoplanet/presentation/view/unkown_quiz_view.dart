@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:p/Features/unknown_exoplanet/data/repo/get_unkown_quiz.dart';
 import 'package:p/core/models/quiz_model.dart';
@@ -10,7 +9,7 @@ import 'package:p/core/widgets/custom_button.dart';
 
 class UnkownQuizView extends StatefulWidget {
   const UnkownQuizView({super.key});
-  static String id = 'GasGiantQuizView';
+  static String id = 'UnkownQuizView';
 
   @override
   State<UnkownQuizView> createState() => _QuizViewState();
@@ -78,7 +77,6 @@ class _QuizViewState extends State<UnkownQuizView> {
       score = 0;
       isPressed = false;
       isAlreadySelected = false;
-      questions.shuffle(Random());
     });
     Navigator.of(context).pop();
   }
@@ -99,47 +97,53 @@ class _QuizViewState extends State<UnkownQuizView> {
           ),
         ],
       ),
-      body: SizedBox(
-        width: double.infinity,
-        child: Padding(
-          padding: edgeInsest,
-          child: Column(
-            children: [
-              QuestionWidget(
-                question: questions[index].title,
-                indexAction: index,
-                totalQuestions: questions.length,
-              ),
-              const Divider(
-                color: neutral,
-              ),
-              const SizedBox(
-                height: 25,
-              ),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: questions[index].options.length,
-                  itemBuilder: (context, i) {
-                    return GestureDetector(
-                      onTap: () => checkAnswerAndUpdate(
-                          questions[index].options.values.toList()[i]),
-                      child: OptionsCard(
-                        options: questions[index].options.keys.toList()[i],
-                        color: isPressed
-                            ? questions[index].options.values.toList()[i] ==
-                                    true
-                                ? correct
-                                : incorrect
-                            : unkownColor,
-                      ),
-                    );
-                  },
+      body: Stack(children: [
+        Image.asset(
+          'images/space wallpaper.jfif',
+          fit: BoxFit.fill,
+        ),
+        SizedBox(
+          width: double.infinity,
+          child: Padding(
+            padding: edgeInsest,
+            child: Column(
+              children: [
+                QuestionWidget(
+                  question: questions[index].title,
+                  indexAction: index,
+                  totalQuestions: questions.length,
                 ),
-              )
-            ],
+                const Divider(
+                  color: neutral,
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: questions[index].options.length,
+                    itemBuilder: (context, i) {
+                      return GestureDetector(
+                        onTap: () => checkAnswerAndUpdate(
+                            questions[index].options.values.toList()[i]),
+                        child: OptionsCard(
+                          options: questions[index].options.keys.toList()[i],
+                          color: isPressed
+                              ? questions[index].options.values.toList()[i] ==
+                                      true
+                                  ? correct
+                                  : incorrect
+                              : unkownColor,
+                        ),
+                      );
+                    },
+                  ),
+                )
+              ],
+            ),
           ),
         ),
-      ),
+      ]),
       floatingActionButton: SizedBox(
           width: 240,
           child: Padding(

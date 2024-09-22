@@ -8,8 +8,8 @@ class GetGasGiantQuiz {
           'Which exoplanet is known for having an "egg shape" due to its star’s gravity?',
       options: {
         '51 Pegasi b': false,
-        'WASP-12b': true,
         'HD 189733 b': false,
+        'WASP-12b': true,
         'KELT-9b': false,
       },
     ),
@@ -39,9 +39,9 @@ class GetGasGiantQuiz {
       title: 'What is unique about the atmosphere of WASP-121b?',
       options: {
         'It contains silicate clouds': false,
-        'Its upper atmosphere is hotter than its lower atmosphere': true,
         'It has a strong magnetic field': false,
         'It has a comet-like tail': false,
+        'Its upper atmosphere is hotter than its lower atmosphere': true,
       },
     ),
     QuizModel(

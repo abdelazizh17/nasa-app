@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:p/Features/super_earth/data/repo/get_super_earth_quiz.dart';
 import 'package:p/core/models/quiz_model.dart';
@@ -79,7 +77,6 @@ class _QuizViewState extends State<SuperEarthQuizView> {
       score = 0;
       isPressed = false;
       isAlreadySelected = false;
-      questions.shuffle(Random());
     });
     Navigator.of(context).pop();
   }
@@ -100,47 +97,53 @@ class _QuizViewState extends State<SuperEarthQuizView> {
           ),
         ],
       ),
-      body: SizedBox(
-        width: double.infinity,
-        child: Padding(
-          padding: edgeInsest,
-          child: Column(
-            children: [
-              QuestionWidget(
-                question: questions[index].title,
-                indexAction: index,
-                totalQuestions: questions.length,
-              ),
-              const Divider(
-                color: neutral,
-              ),
-              const SizedBox(
-                height: 25,
-              ),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: questions[index].options.length,
-                  itemBuilder: (context, i) {
-                    return GestureDetector(
-                      onTap: () => checkAnswerAndUpdate(
-                          questions[index].options.values.toList()[i]),
-                      child: OptionsCard(
-                        options: questions[index].options.keys.toList()[i],
-                        color: isPressed
-                            ? questions[index].options.values.toList()[i] ==
-                                    true
-                                ? correct
-                                : incorrect
-                            : superEarthColor,
-                      ),
-                    );
-                  },
+      body: Stack(children: [
+        Image.asset(
+          'images/space wallpaper.jfif',
+          fit: BoxFit.fill,
+        ),
+        SizedBox(
+          width: double.infinity,
+          child: Padding(
+            padding: edgeInsest,
+            child: Column(
+              children: [
+                QuestionWidget(
+                  question: questions[index].title,
+                  indexAction: index,
+                  totalQuestions: questions.length,
                 ),
-              )
-            ],
+                const Divider(
+                  color: neutral,
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: questions[index].options.length,
+                    itemBuilder: (context, i) {
+                      return GestureDetector(
+                        onTap: () => checkAnswerAndUpdate(
+                            questions[index].options.values.toList()[i]),
+                        child: OptionsCard(
+                          options: questions[index].options.keys.toList()[i],
+                          color: isPressed
+                              ? questions[index].options.values.toList()[i] ==
+                                      true
+                                  ? correct
+                                  : incorrect
+                              : superEarthColor,
+                        ),
+                      );
+                    },
+                  ),
+                )
+              ],
+            ),
           ),
         ),
-      ),
+      ]),
       floatingActionButton: SizedBox(
           width: 240,
           child: Padding(
