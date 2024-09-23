@@ -20,12 +20,16 @@ class UnkownCard extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        Text(
-          'Exoplanet Name : ” ${unkownModel.name} ”',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: unkownColor,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            'Exoplanet Name : ${unkownModel.name}',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: unkownColor,
+            ),
           ),
         ),
         const SizedBox(

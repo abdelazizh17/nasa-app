@@ -19,12 +19,16 @@ class GasCard extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        Text(
-          'Exoplanet Name : ” ${gasGiantModel.name} ”',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: Color(0xffcdc09b),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            'Exoplanet Name : ${gasGiantModel.name}',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Color(0xffcdc09b),
+            ),
           ),
         ),
         const SizedBox(

@@ -20,12 +20,16 @@ class NeptuneLikeCard extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        Text(
-          'Exoplanet Name : ” ${neptuneLikeModel.name} ”',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: neptuneLikeColor
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            'Exoplanet Name : ${neptuneLikeModel.name}',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: neptuneLikeColor
+            ),
           ),
         ),
         const SizedBox(

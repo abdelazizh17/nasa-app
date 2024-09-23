@@ -19,12 +19,16 @@ class SuperEarthCard extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        Text(
-          'Exoplanet Name : ” ${superEarthModel.name} ”',
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: Color(0xffb7b4ac),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            'Exoplanet Name : ${superEarthModel.name}',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Color(0xffb7b4ac),
+            ),
           ),
         ),
         const SizedBox(

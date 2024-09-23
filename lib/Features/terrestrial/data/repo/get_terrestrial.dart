@@ -16,21 +16,7 @@ class GetTerrestrial {
       image: 'images/terrestrial-4.webp',
       model3D: 'images/TRAPPIST_1_e_0920003738.glb',
     ),
-    TerrestrialModel(
-      name: 'Teegarden\'s Star d',
-      distance: '21 light-years',
-      mass: '0.82 times Earth’s mass',
-      orbitalPeriod: '26.1 days',
-      formationMaterial: 'Likely composed of rock and metal, similar to Earth',
-      discoveryMethod: 'Radial Velocity',
-      description:
-          'A terrestrial planet with a relatively short orbital period, good for studying rocky exoplanets close to their stars',
-      funFact:
-          'Teegarden\'s Star d is a rocky planet with a short year of 26.1 days',
-      image: 'images/terrestrial-4.webp',
-      model3D: 'images/LHS_3154_b_0919232140.glb',
-      age: '8 billion years',
-    ),
+
     TerrestrialModel(
       name: 'SPECULOOS-3 b',
       distance: '22,152 light-years',
@@ -45,6 +31,21 @@ class GetTerrestrial {
       image: 'images/terrestrial-4.webp',
       model3D: 'images/LHS_475_b_0920020501.glb',
       age: '55 light-years',
+    ),
+    TerrestrialModel(
+      name: 'Teegarden\'s Star d',
+      distance: '21 light-years',
+      mass: '0.82 times Earth’s mass',
+      orbitalPeriod: '26.1 days',
+      formationMaterial: 'Likely composed of rock and metal, similar to Earth',
+      discoveryMethod: 'Radial Velocity',
+      description:
+      'A terrestrial planet with a relatively short orbital period, good for studying rocky exoplanets close to their stars',
+      funFact:
+      'Teegarden\'s Star d is a rocky planet with a short year of 26.1 days',
+      image: 'images/terrestrial-4.webp',
+      model3D: 'images/LHS_3154_b_0919232140.glb',
+      age: '8 billion years',
     ),
     TerrestrialModel(
       name: 'Kepler-1994 b',

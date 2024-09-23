@@ -20,12 +20,16 @@ class TerrestrialCard extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        Text(
-          'Exoplanet Name : ” ${terrestrialModel.name} ”',
-          style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: terrestrialColor),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            textAlign: TextAlign.center,
+            'Exoplanet Name : ${terrestrialModel.name}',
+            style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: terrestrialColor),
+          ),
         ),
         const SizedBox(
           height: 60,

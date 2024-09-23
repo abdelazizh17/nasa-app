@@ -22,7 +22,11 @@ class OnboardingBody extends StatelessWidget {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(onboardingInfo[index].image),
+            Image.asset(
+              onboardingInfo[index].image,
+              fit: BoxFit.fill,
+              width: double.infinity,
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -36,10 +40,13 @@ class OnboardingBody extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Text(
-              onboardingInfo[index].description,
-              style: const TextStyle(color: Colors.grey, fontSize: 17),
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Text(
+                onboardingInfo[index].description,
+                style: const TextStyle(color: Colors.grey, fontSize: 17),
+                textAlign: TextAlign.center,
+              ),
             ),
           ],
         ),

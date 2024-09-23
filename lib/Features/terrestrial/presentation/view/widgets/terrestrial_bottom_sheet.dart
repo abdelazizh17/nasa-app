@@ -11,38 +11,41 @@ class TerrestrialBottomSheet extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Container(
-          height: 480,
-          width: double.infinity,
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(28),
-              topLeft: Radius.circular(28),
-            ),
-            color: Color(0xff482d15),
-          ),
-          child:  SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 24,
+        AspectRatio(
+          aspectRatio: 5/5,
+          child: Container(
+            
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(28),
+                topLeft: Radius.circular(28),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ListTile(
-                    title: Text(
-                    terrestrialModel.name ,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: terrestrialColor,
-                          fontSize: 30 // Color for "News"
-                          ),
+              color: Color(0xff482d15),
+            ),
+            child:  SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 24,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ListTile(
+                      title: Text(
+                      terrestrialModel.name ,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: terrestrialColor,
+                            fontSize: 30 // Color for "News"
+                            ),
+                      ),
+                      subtitle:  TerrestrialGiantDetails(terrestrialModel: terrestrialModel,),
                     ),
-                    subtitle:  TerrestrialGiantDetails(terrestrialModel: terrestrialModel,),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),

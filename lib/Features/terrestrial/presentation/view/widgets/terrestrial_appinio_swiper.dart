@@ -35,7 +35,7 @@ class _CustomAppinioSwiperState extends State<TerrestrialAppinioSwiper> {
                   ? const IntroductionCard(
                       text:
                           'Terrestrial planets are rocky worlds with solid surfaces. They are characterized by their mineral compositions and include planets like Earth, Mars, Venus, and Mercury. Studying these planets provides insights into planetary geology and potential habitability.',
-                      color: superEarthColor,
+                      color: terrestrialColor,
                     )
                   : (index == terrestrialModel.length - 1)
                       ? const ConclusionCard(
