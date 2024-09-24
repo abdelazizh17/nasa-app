@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p/Features/chat_bot/presentation/view/chat_view.dart';
 import 'package:p/Features/gas_giant/presentation/view/gas_giant_quiz_view.dart';
 import 'package:p/Features/neptune_like/presentation/view/neptune_like.dart';
 import 'package:p/Features/neptune_like/presentation/view/neptune_quiz_view.dart';
@@ -48,6 +49,7 @@ class NasaApp extends StatelessWidget {
         SuperEarthQuizView.id: (context) => const SuperEarthQuizView(),
         TerrestrialQuizView.id: (context) => const TerrestrialQuizView(),
         UnkownQuizView.id: (context) => const UnkownQuizView(),
+        ChatBotView.id: (context) => const ChatBotView(),
       },
       initialRoute: onboarding ? HomeView.id : Onboarding.id,
     );
