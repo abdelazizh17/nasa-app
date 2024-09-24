@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:p/Features/chat_bot/data/chat_bot_cubit.dart';
+import 'package:p/Features/chat_bot/presentation/manager/chat_bot_cubit.dart';
 import 'package:p/Features/chat_bot/presentation/view/widgets/chat_bubble.dart';
 import 'package:p/Features/chat_bot/presentation/view/widgets/chat_bubble_gemini.dart';
 

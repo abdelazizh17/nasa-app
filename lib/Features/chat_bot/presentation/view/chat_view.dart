@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:p/Features/chat_bot/data/chat_bot_cubit.dart';
+import 'package:p/Features/chat_bot/presentation/manager/chat_bot_cubit.dart';
+import 'package:p/Features/chat_bot/data/repo/home_repo_impl.dart';
 import 'package:p/Features/chat_bot/presentation/view/widgets/appbar_title.dart';
 import 'package:p/Features/chat_bot/presentation/view/widgets/chat_view_body.dart';
 
@@ -12,7 +13,7 @@ class ChatBotView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ChatBotCubit(),
+      create: (context) => ChatBotCubit(HomeRepoImpl()),
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
