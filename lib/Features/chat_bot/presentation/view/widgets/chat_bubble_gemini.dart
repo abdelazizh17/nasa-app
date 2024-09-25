@@ -9,8 +9,7 @@ class ChatBubleGemini extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        padding: const EdgeInsets.only(
-            left: 16, top: 32, bottom: 32, right: 32), //padding to child
+        padding: const EdgeInsets.all(15), //padding to child
         margin: const EdgeInsets.all(16), //margin to widget
         decoration: const BoxDecoration(
           color: Color(0xff3d2f80),
@@ -22,7 +21,8 @@ class ChatBubleGemini extends StatelessWidget {
         ),
         child: Text(
           messageModel.message,
-          style: const TextStyle(color: Colors.white),
+          style: const TextStyle(
+              color: Colors.white, fontSize: 18, fontWeight: FontWeight.normal),
         ),
       ),
     );
