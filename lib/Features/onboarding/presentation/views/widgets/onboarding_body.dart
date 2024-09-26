@@ -44,7 +44,8 @@ class OnboardingBody extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Text(
                 onboardingInfo[index].description,
-                style: const TextStyle(color: Colors.grey, fontSize: 17),
+                style: TextStyle(
+                    color: Colors.white.withOpacity(0.8), fontSize: 17),
                 textAlign: TextAlign.center,
               ),
             ),

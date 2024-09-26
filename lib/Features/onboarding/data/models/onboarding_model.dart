@@ -24,7 +24,7 @@ class OnboardingInfo {
     OnboardingModel(
       title: 'Get Started',
       description:
-          'The Cosmos is all that is or was or ever will be. Our feeblest contemplations of the Cosmos stir us -- there is a tingling in the spine, a catch in the voice, a faint sensation, as if a distant memory, of falling from a height. We know we are approaching the greatest of mysteries.',
+          '“The Cosmos is all that is or was or ever will be. Our feeblest contemplations of the Cosmos stir us -- there is a tingling in the spine, a catch in the voice, a faint sensation, as if a distant memory, of falling from a height. We know we are approaching the greatest of mysteries.”\n― Carl Sagan',
       image: 'images/giphy (1).gif',
     ),
   ];
